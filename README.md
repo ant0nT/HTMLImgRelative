@@ -1,6 +1,6 @@
 # HTMLImgRelative
-###The script scans html file in specified and child directories, then replaces remote images paths with local ones and downloads them to the local drive.###
-###May be useful for building archives with offline html documentation.###
+### The script scans html file in specified and child directories, then replaces remote images paths with local ones and downloads them to the local drive. ###
+### May be useful for building archives with offline html documentation. ###
 
 # Usage:
 
