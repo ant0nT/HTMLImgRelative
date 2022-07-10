@@ -46,6 +46,7 @@ def find_imgs(html):
         return
     images = soup.findAll('img')
     rel_path = os.path.relpath(html, directory_path)
+    print('rel_path', rel_path)
     print(html)
     for i, img in enumerate(images):
         if img.has_attr('src'):
