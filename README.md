@@ -6,7 +6,7 @@ May be useful for building archives with offline html documentation.
 
 `python3 HTMLImgRelative.py /path/to/directory/with/html/files`
 
-Functionality has been tested on python 3.8 and macos. Other systems will test soon.
+Functionality has been tested on python 3.8 and macos. Other systems will be tested soon.
  
 ### Requirements:
  
