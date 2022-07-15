@@ -3,6 +3,7 @@ import os
 import sys
 import requests
 import validators
+from urllib.request import pathname2url
 from pprint import pprint
 from bs4 import *
 
@@ -52,8 +53,8 @@ def find_imgs(html):
             if validators.url(img['src']):
                 print('src', img['src'])
                 path_to_image = download_image(i, img['src'], rel_path)
-                print(path_to_image)
-                img['src'] = str(os.path.relpath(path_to_image, os.path.dirname(html)))
+                #print(path_to_image)
+                img['src'] = pathname2url(os.path.relpath(path_to_image, os.path.dirname(html)))
         pass
     with open(html, "w", encoding='utf-8') as file:
         file.write(str(soup))
